@@ -44,10 +44,12 @@ class Matrix:
     def iterate(self):
         for i in range(self.n):
             for j in range(self.m):
-                yield i, j, self.get(i, j)
+                print(self.matrix[i][j], end=" ")
+            print()
+                #yield i, j, self.get(i, j)
 
-    def __str__(self):
-        return "\n".join(" ".join(str(self.get(i, j)) for j in range(self.m)) for i in range(self.n))
+    # def __str__(self):
+    #     return "\n".join(" ".join(str(self.get(i, j)) for j in range(self.m)) for i in range(self.n))
 
 
 def main():
@@ -88,8 +90,9 @@ def main():
     print(result)
 
     print("\nIterating through elements:")
-    for i, j, value in result.iterate():
-        print(f"Element at ({i}, {j}): {value}")
+    result.iterate()
+    #for i, j, value in result.iterate():
+       # print(f"Element at ({i}, {j}): {value}")
 
 
 main()

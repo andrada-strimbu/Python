@@ -1,10 +1,6 @@
 def build_xml_element(tag, content, **attributes):
-    xml_element = f"<{tag}"
-    for key, value in attributes.items():
-        xml_element += f' {key}=" \  "{value} \  "'
-
-    xml_element += f">{content}</{tag}>"
-
+    attribute_str = ' '.join([f'{key}="{value}"' for key, value in attributes.items()])
+    xml_element = f"<{tag} {attribute_str}>{content}</{tag}>"
     return xml_element
 
 

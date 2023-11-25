@@ -1,4 +1,6 @@
 def my_function(*args, **kwargs):
+    print(args)
+    print(kwargs)
     count = 0
     for arg in args:
         if arg in kwargs.values():
