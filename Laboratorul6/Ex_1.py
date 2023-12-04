@@ -1,6 +1,7 @@
 import os
 import sys
 
+
 def read_and_print_files(directory, file_extension):
     try:
         if not os.path.isdir(directory):
@@ -18,6 +19,8 @@ def read_and_print_files(directory, file_extension):
 
     except Exception as e:
         print(f"Error: {e}")
+
+
 def main():
     if len(sys.argv) != 3:
         print("Usage: python script.py <directory_path> <file_extension>")

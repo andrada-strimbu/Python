@@ -1,0 +1,24 @@
+luni
+10-12 invatare Automata S
+12-14 Programare in python S
+18-19 programare in python C
+
+
+marti
+10-12 Securitatea Informatiei C
+18-20 .Net C
+
+miercuri
+8-10 Inteligenta Artificiala C
+12-14 TPM S
+18-20 .net S
+
+joi
+8-10 Inteligenta Artificiala S (Ar merge sa ne mutam la b5 ca e la 10)
+14-16 TMP C
+16-18 Securitatea Informatiei S
+18-20 Invatare Automata C
+
+vineri
+
+

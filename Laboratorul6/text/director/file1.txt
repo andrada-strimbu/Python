@@ -1,0 +1,52 @@
+1.Gradul unui vârf :
+
+Definiție: Într-un graf neorientat, gradul unui vârf x, notat d(x), reprezintă numărul de vârfuri adiacente cu vârful x sau numărul de muchii incidente cu acesta.
+
+2.Suma gradelor tuturor vârfurilor:
+
+Teoremă: Într-un graf neorientat, suma gradelor tuturor vârfurilor este dublul numărului de muchii.
+Consecințe:
+Suma gradelor tuturor vârfurilor este un număr par.
+Numărul de vârfuri de grad impar într-un graf neorientat este întotdeauna par.
+
+3.Matricea de adiacență:
+
+Pentru un graf neorientat G=(X,U) cu n vârfuri, matricea de adiacență A este o matrice cu n linii și n coloane, în care elementul A[i][j] este 1 dacă există muchia [i,j] în graf și 0 în caz contrar.
+
+4.Liste de adiacențe:
+
+Pentru un graf neorientat G=(X,U), listele de adiacențe reprezintă o reprezentare a grafului în care pentru fiecare vârf x se memorează lista vârfurilor adiacente cu x.
+
+5.Graf parțial:
+
+Definiție: Un graf parțial al unui graf neorientat G=(X,U) se obține păstrând vârfurile și eliminând eventual anumite muchii.
+
+6.Subgraf:
+
+Definiție: Un subgraf al unui graf neorientat G=(X,U) se obține prin eliminarea unor vârfuri și a muchiilor incidente cu acele vârfuri.
+
+7.Graf complementar:
+
+Definiție: Graful complementar al unui graf neorientat G=(X,U) este un graf în care două vârfuri x și y sunt adiacente dacă și numai dacă nu sunt adiacente în G.
+
+8.Graf nul:
+
+Definiție: Un graf neorientat este graf nul dacă nu are nicio muchie.
+
+9.Graf complet:
+
+Definiție: Un graf neorientat este graf complet dacă oricare două vârfuri distincte sunt adiacente. Un graf complet cu n vârfuri este notat Kn.
+Într-un graf complet cu n vârfuri sunt C2n=n∗(n−1)2 muchii și fiecare vârf are gradul n-1.
+Propoziție: Sunt 2n∗(n−1)2 grafuri neorientate distincte cu n vârfuri.
+
+10.Graf regulat:
+
+Definiție: Un graf în care toate vârfurile au același grad se numește graf regulat.
+
+11.Graf bipartit:
+
+Definiție: Un graf neorientat este graf bipartit dacă vârfurile sale pot fi împărțite în două mulțimi disjuncte astfel încât toate muchiile să fie între cele două mulțimi.
+
+12.Lanț și ciclu:
+
+Definiție: Un lanț este o succesiune de vârfuri în care oricare două

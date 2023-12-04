@@ -1,0 +1,186 @@
+
+Python oferă o serie de funcții utile pentru a lucra cu liste. Iată câteva dintre cele mai comune:
+
+1.append(): Adaugă un element la sfârșitul listei.
+my_list = [1, 2, 3]
+my_list.append(4)
+
+2.extend(): Extinde lista prin adăugarea elementelor din altă listă.
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+list1.extend(list2)
+
+3.insert(): Inserează un element la o anumită poziție în listă
+my_list = [1, 2, 3]
+my_list.insert(1, 4)  # Inserează 4 la poziția 1
+
+4.remove(): Elimină prima apariție a unui element din listă.
+my_list = [1, 2, 3, 2, 4]
+my_list.remove(2)  # Elimină prima apariție a lui 2
+
+5.pop(): Elimină și returnează elementul de la o anumită poziție sau de la sfârșitul listei.
+my_list = [1, 2, 3]
+popped_element = my_list.pop(1)  # Elimină elementul de la poziția 1
+
+6.index(): Returnează indexul primei apariții a unui element în listă.
+my_list = [1, 2, 3, 2, 4]
+index = my_list.index(2)  # Returnează indexul primei apariții a lui 2
+
+7.count(): Numără de câte ori apare un element în listă.
+my_list = [1, 2, 3, 2, 4]
+count = my_list.count(2)  # Numără câte apariții are 2
+
+8.sort(): Ordonează lista.
+my_list = [3, 1, 4, 1, 5, 9, 2]
+my_list.sort()
+
+9.reverse(): Inversează ordinea elementelor într-o listă.
+my_list = [1, 2, 3, 4]
+my_list.reverse()
+
+10.copy(): Creează o copie a unei liste.
+original_list = [1, 2, 3]
+copied_list = original_list.copy()
+
+11.clear(): Elimină toate elementele dintr-o listă.
+my_list = [1, 2, 3]
+my_list.clear()
+
+12.any(), all(): Verifică dacă cel puțin un element sau toate elementele unei liste sunt evaluate ca True.
+any_true = any([False, True, False])
+all_true = all([True, True, True])
+
+DICTIONARE
+
+1.Crearea unui dicționar:
+my_dict = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
+
+2.Accesarea valorilor:
+value = my_dict['key1']
+
+3.Adăugarea/Actualizarea unui element:
+my_dict['new_key'] = 'new_value'  # Adaugă un element nou
+my_dict['key1'] = 'updated_value'  # Actualizează o valoare existentă
+
+4.Ștergerea unui element:
+del my_dict['key2']
+
+5.Verificarea existenței unei chei:
+key_exists = 'key1' in my_dict
+
+6.Obținerea unei liste cu toate cheile sau valori:
+keys = list(my_dict.keys())
+values = list(my_dict.values())
+
+7.Iterarea prin chei și valori:
+for key in my_dict:
+    print(key, my_dict[key])
+
+# Sau
+for key, value in my_dict.items():
+    print(key, value)
+
+8.Metoda get():
+value = my_dict.get('key1', default_value)  # Returnează valoarea pentru 'key1' sau default_value dacă cheia lipsește
+
+9.Metoda pop():
+popped_value = my_dict.pop('key1')  # Șterge și returnează valoarea pentru 'key1'
+
+10.Metoda update():
+other_dict = {'key4': 'value4', 'key5': 'value5'}
+my_dict.update(other_dict)  # Adaugă perechile cheie-valoare din other_dict în my_dict
+
+11.Metoda clear():
+my_dict.clear()  # Elimină toate perechile cheie-valoare din dicționar
+
+12.Metoda items():
+items = my_dict.items()  # Returnează o listă de tupluri cheie-valoare
+
+
+CLASE
+1.Crearea unei clase:
+class MyClass:
+    pass
+
+2.Atribuiri de atribute (variabile) ale clasei:
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+3.Instantierea unui obiect (obiect de tipul clasei):
+person1 = Person("John", 25)
+
+4.Metode ale clasei:
+class Dog:
+    def __init__(self, name):
+        self.name = name
+    
+    def bark(self):
+        print("Woof!")
+
+5.Apelarea metodelor obiectului:
+dog1 = Dog("Buddy")
+dog1.bark()
+
+6.Moștenirea:
+class Student(Person):  # Student moștenește atributele și metodele clasei Person
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+
+7.Polimorfismul:
+class Cat:
+    def make_sound(self):
+        print("Meow!")
+
+class Parrot:
+    def make_sound(self):
+        print("Squawk!")
+
+8.Încapsularea:
+class BankAccount:
+    def __init__(self, balance):
+        self._balance = balance  # _balance este un atribut "protejat"
+        
+    def get_balance(self):
+        return self._balance
+EXCEPTII:
+"ValueError", "TypeError", "FileNotFoundError", 
+try:
+    # cod care ar putea genera o excepție
+except TipulDeExceptie as e:
+    # codul care se execută în cazul apariției excepției
+
+1.Exemplu de excepție simplă:
+try:
+    x = 1 / 0
+except ZeroDivisionError as e:
+    print(f"Caught an exception: {e}")
+
+Blocul finally:
+Poți folosi un bloc finally pentru a specifica cod care se va executa întotdeauna, indiferent dacă apare o excepție sau nu.
+try:
+    # cod care ar putea genera o excepție
+except TipulDeExceptie as e:
+    # codul care se execută în cazul apariției excepției
+finally:
+    # cod care se execută întotdeauna
+
+3.Excepții multiple:
+Poți trata mai multe tipuri de excepții în același bloc except.
+try:
+    # cod care ar putea genera o excepție
+except (Excepție1, Excepție2) as e:
+    # codul care se execută în cazul apariției oricăreia dintre excepții
+
+4.Ridicarea excepțiilor:
+Poți să ridici manual o excepție în codul tău folosind instrucțiunea raise.
+if x < 0:
+    raise ValueError("x nu poate fi negativ")
+
+
+EXPRESII LAMDA:
+suma = lambda x, y: x + y
+rezultat = suma(3, 5)
+print(rezultat)  # Afișează 8
