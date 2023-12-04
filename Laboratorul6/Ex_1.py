@@ -23,7 +23,7 @@ def read_and_print_files(directory, file_extension):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python script.py <directory_path> <file_extension>")
+        print(" python script.py <directory_path> <file_extension>")
         sys.exit(1)
 
     directory_path = sys.argv[1]

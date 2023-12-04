@@ -1,13 +1,14 @@
 import os
 import sys
 
+
 def count_files_by_extension(directory):
     try:
         if not os.path.isdir(directory):
             raise FileNotFoundError(f"Directory not found: {directory}")
 
         files = [file for file in os.listdir(directory)
- if os.path.isfile(os.path.join(directory, file))]
+                 if os.path.isfile(os.path.join(directory, file))]
 
         extension_counts = {}
         for file in files:
@@ -28,10 +29,10 @@ def count_files_by_extension(directory):
     except Exception as e:
         print(f"Error: {e}")
 
-def main():
 
+def main():
     if len(sys.argv) != 2:
-        print("Usage: python script.py <directory_path>")
+        print(" python script.py <directory_path>")
         sys.exit(1)
 
     directory_path = sys.argv[1]

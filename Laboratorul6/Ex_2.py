@@ -22,7 +22,7 @@ def rename_files_with_sequence(directory):
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python script.py <directory_path>")
+        print("python script.py <directory_path>")
         sys.exit(1)
 
     directory_path = sys.argv[1]
