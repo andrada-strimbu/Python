@@ -68,7 +68,7 @@ class Magazine(LibraryItem):
 def main():
     book = Book(title="The Great Gatsby", author="F. Scott Fitzgerald", item_id="B001", genre="Classic")
     dvd = DVD(title="Inception", director="Christopher Nolan", item_id="D001", duration=148)
-    magazine = Magazine(title="Vouge", issue="October 2023", item_id="M001")
+    magazine = Magazine(title="Vogue", issue="October 2023", item_id="M001")
     book.display_info()
     print(book.check_out())
     book.return_item()
