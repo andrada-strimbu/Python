@@ -51,9 +51,9 @@ def main():
     rectangle = Rectangle(4, 6)
     triangle = Triangle(3, 4, 5)
 
-    print("Circle - Area:", circle.area(), "Perimeter:", circle.perimeter())
-    print("Rectangle - Area:", rectangle.area(), "Perimeter:", rectangle.perimeter())
-    print("Triangle - Area:", triangle.area(), "Perimeter:", triangle.perimeter())
+    print("Circle -> Area:", circle.area(), "Perimeter:", circle.perimeter())
+    print("Rectangle -> Area:", rectangle.area(), "Perimeter:", rectangle.perimeter())
+    print("Triangle -> Area:", triangle.area(), "Perimeter:", triangle.perimeter())
 
 
 main()

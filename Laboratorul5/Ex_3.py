@@ -52,9 +52,9 @@ class Truck(Vehicle):
 
 
 def main():
-    car = Car(make="Toyota", model="Camry", year=2022, consum=7.13, capacitateDeRemorcare=130)
+    car = Car(make="Audi", model="A3", year=2010, consum=7.13, capacitateDeRemorcare=130)
     motorcycle = Motorcycle(make="Harley-Davidson", model="Sportster", year=2021, consum=5, capacitateDeRemorcare=10)
-    truck = Truck(make="Ford", model="F-150", year=2023, consum=20, capacitateDeRemorcare=440)
+    truck = Truck(make="Mercedes", model="CLS", year=2023, consum=20, capacitateDeRemorcare=440)
     car.display_info()
     car.mileage()
     car.towingCapacity()

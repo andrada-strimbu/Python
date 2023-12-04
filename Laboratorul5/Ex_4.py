@@ -52,9 +52,9 @@ class Engineer(Employee):
 
 
 def main():
-    manager = Manager(name="John Doe", employee_id=101, salary=80000, department="Sales")
-    engineer = Engineer(name="Jane Smith", employee_id=201, salary=90000, programming_language="Python")
-    salesperson = Salesperson(name="Bob Johnson", employee_id=301, salary=70000, sales_target=100000)
+    manager = Manager(name="Andrada ", employee_id=101, salary=80000, department="Sales")
+    engineer = Engineer(name="Carina", employee_id=201, salary=90000, programming_language="Python")
+    salesperson = Salesperson(name="Alex", employee_id=301, salary=70000, sales_target=100000)
 
     manager.display_info()
     manager.job()

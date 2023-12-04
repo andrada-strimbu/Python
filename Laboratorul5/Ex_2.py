@@ -51,8 +51,8 @@ class CheckingAccount(Account):
 
 
 def main():
-    savings_account = SavingsAccount(account_number="SA123", balance=1000)
-    checking_account = CheckingAccount(account_number="CA456", balance=500, overdraft_limit=200)
+    savings_account = SavingsAccount(account_number="211254A", balance=1000)
+    checking_account = CheckingAccount(account_number="211245C", balance=500, overdraft_limit=200)
 
     savings_account.deposit(200)
     savings_account.interestCalculation()
